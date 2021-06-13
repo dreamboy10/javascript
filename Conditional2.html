@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conditional2</title>
+</head>
+<body>
+	<script>
+		var id = prompt('아이디를 입력해주세요.');
+    if(id == 'dreamboy'){
+    	var password = prompt('비밀번호를 입력해주세요.');
+    	if(password == '111111'){
+    		alert('로그인 하셨습니다.'+id+'님 반갑습니다');
+    		console.log('로그인 하셨습니다.'+id+'님 반갑습니다');
+    		document.write('로그인 하셨습니다.'+id+'님 반갑습니다'+"<br>");
+    	} else {
+    		alert('비밀번호가 다릅니다.');
+    		console.log('비밀번호가 다릅니다.');
+    		document.write('비밀번호가 다릅니다.'+"<br>");
+    	}
+    } else {
+    	alert('아이디가 일치하지 않습니다.');
+    	console.log('아이디가 일치하지 않습니다.');
+    	document.write('아이디가 일치하지 않습니다.'+
+    		"<br>");
+    }
+	</script>
+</body>
+</html>
