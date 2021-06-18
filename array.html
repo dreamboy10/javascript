@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>array</title>
+</head>
+<body>
+	<script>
+		/*
+		var member = ['dreamboy','obama','kudo']
+		console.log(member);
+		document.write(member+"<br>");
+		console.log(member[0]);
+		document.write(member[0]+"<br>");
+		console.log(member[1]);
+		document.write(member[1]+"<br>");
+		console.log(member[2]);
+		document.write(member[2]+"<br>");
+		*/
+
+		/*
+		function get_member1(){
+    	return 'dreamboy';
+		}
+		console.log(get_member1());
+		document.write(get_member1()+"<br>");
+ 
+		function get_member2(){
+    	return 'obama';
+		}
+		console.log(get_member2());
+		document.write(get_member2()+"<br>");
+
+		function get_member3(){
+    	return 'kudo'
+		}
+		console.log(get_member3());
+		document.write(get_member3()+"<br>");
+		*/
+
+		/*
+		function get_members(){
+    	return ['dreamboy', 'obama', 'kudo'];
+		}
+		var members = get_members();
+		console.log(members[0]);
+		document.write(members[0]+"<br>");
+		console.log(members[1]);
+		document.write(members[1]+"<br>");
+		console.log(members[2]);
+		document.write(members[2]+"<br>");
+		*/
+
+		function get_members(){
+    	return ['dreamboy', 'obama', 'kudo', 'sony'];
+		}
+
+		members = get_members();
+
+		for(var i = 0; i < members.length; i++) {
+			console.log(members[i].toUpperCase());
+			document.write(members[i].toUpperCase()+"<br>");
+		}
+	</script>
+</body>
+</html>
