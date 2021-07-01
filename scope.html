@@ -68,15 +68,45 @@
   //   console.log(vscope);
   //   document.write(vscope+"<br>");
 
-  	var vscope = 'dreamboy'
-    function fscope(){
-    	var vscope = 'obama';
-			vscope = 'obama';
-		}
-		fscope();
-		alert(vscope);
-    console.log(vscope);
-    document.write(vscope+"<br>");
+  // 	var vscope = 'dreamboy'
+  //   function fscope(){
+  //   	var vscope = 'obama';
+		// 	vscope = 'obama';
+		// }
+		// fscope();
+		// alert(vscope);
+  //   console.log(vscope);
+  //   document.write(vscope+"<br>");
+
+	  // function a() {
+	  // 	 i = 0;
+	  // }
+	  // for(var i = 0; i < 5; i++){
+	  // 	a();
+	  // 	console.log(i);
+	  // 	document.write(i+"<br>");
+	  // }
+
+	  (function() {
+	  	var MYAPP = {}
+			MYAPP.calculator = {
+    		'left' : null,
+    		'right' : null
+			}
+			MYAPP.coordinate = {
+    		'left' : null,
+    		'right' : null
+			}
+ 
+			MYAPP.calculator.left = 10;
+			MYAPP.calculator.right = 20;
+			function sum(){
+    		return MYAPP.calculator.left + 
+    	MYAPP.calculator.right;
+			}
+			console.log(sum());
+			document.write(sum()+"<br>");
+	 	}())
 	</script>	
 </body>
 </html>
