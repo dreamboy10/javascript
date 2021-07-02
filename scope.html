@@ -87,26 +87,47 @@
 	  // 	document.write(i+"<br>");
 	  // }
 
-	  (function() {
-	  	var MYAPP = {}
-			MYAPP.calculator = {
-    		'left' : null,
-    		'right' : null
-			}
-			MYAPP.coordinate = {
-    		'left' : null,
-    		'right' : null
-			}
+	  // (function() {
+	  // 	var MYAPP = {}
+			// MYAPP.calculator = {
+   //  		'left' : null,
+   //  		'right' : null
+			// }
+			// MYAPP.coordinate = {
+   //  		'left' : null,
+   //  		'right' : null
+			// }
  
-			MYAPP.calculator.left = 10;
-			MYAPP.calculator.right = 20;
-			function sum(){
-    		return MYAPP.calculator.left + 
-    	MYAPP.calculator.right;
-			}
-			console.log(sum());
-			document.write(sum()+"<br>");
-	 	}())
+			// MYAPP.calculator.left = 10;
+			// MYAPP.calculator.right = 20;
+			// function sum(){
+   //  		return MYAPP.calculator.left + 
+   //  	MYAPP.calculator.right;
+			// }
+			// console.log(sum());
+			// document.write(sum()+"<br>");
+	 	// }())
+
+	 // 	for(var i = 0; i < 1; i++){
+  //   	var name = 'dream world';
+		// }
+		// alert(name);
+		// console.log(name);
+		// document.write(name+"<br>");
+
+		var i = 5;
+ 
+		function a(){
+    	var i = 10;
+    	b();
+		}
+ 
+		function b(){
+			console.log(i);
+    	document.write(i+"<br>");
+		}
+ 
+		a();
 	</script>	
 </body>
 </html>
