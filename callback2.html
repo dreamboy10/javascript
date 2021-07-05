@@ -8,9 +8,10 @@
 <body>
 	<script src="jquery.js"></script>
 	<script>
-		 $.get('./datasource.json.js', function(result){
-        console.log(result);
-    }, 'json');
+		 $.get('http://localhost/javascript/datasource.json.js', 
+		 		function(result){
+        	console.log(result);
+    		}, 'json');
 	</script>
 </body>
 </html>
