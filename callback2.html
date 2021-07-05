@@ -10,7 +10,9 @@
 	<script>
 		 $.get('http://localhost/javascript/datasource.json.js', 
 		 		function(result){
+        	alert(result);
         	console.log(result);
+        	document.write(result+"<br>");
     		}, 'json');
 	</script>
 </body>
