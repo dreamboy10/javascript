@@ -18,16 +18,45 @@
 		// }
 		// outter();
 
-		function outter() {
-    	var title = 'dream world';  
-    	return function() {        
-        alert(title);
-        console.log(title);
-        document.write(title+"<br>");
+		// function outter() {
+  //   	var title = 'dream world';  
+  //   	return function() {        
+  //       alert(title);
+  //       console.log(title);
+  //       document.write(title+"<br>");
+  //   	}
+		// }
+		// inner = outter();
+		// inner();
+
+		function factory_movie(title){
+    	return {
+        get_title : function (){
+            return title;
+        },
+        set_title : function(_title){
+            title = _title
+        }
     	}
 		}
-		inner = outter();
-		inner();
+		ghost = factory_movie('Ghost in the shell');
+		matrix = factory_movie('Matrix');
+ 
+		alert(ghost.get_title());
+		console.log(ghost.get_title());
+		document.write(ghost.get_title()+"<br>");
+		alert(matrix.get_title());
+		console.log(matrix.get_title());
+		document.write(matrix.get_title()+"<br>");
+ 
+		ghost.set_title('공각기동대');
+ 
+		alert(ghost.get_title());
+		console.log(ghost.get_title());
+		document.write(ghost.get_title()+"<br>");
+		alert(matrix.get_title());
+		console.log(matrix.get_title());
+		document.write(matrix.get_title()+"<br>");
 	</script>
 </body>
 </html>
