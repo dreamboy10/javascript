@@ -20,6 +20,52 @@
 		alert('result : ' + sum(1,2,3,4));
 		console.log('result : ' + sum(1,2,3,4));
 		document.write('result : ' + sum(1,2,3,4)+"<br>");
+
+		function zero(){
+			alert(
+        'zero.length', zero.length,
+        'arguments', arguments.length
+    	);
+    	console.log(
+        'zero.length', zero.length,
+        'arguments', arguments.length
+    	);
+    	document.write(
+        'zero.length', zero.length,
+        'arguments', arguments.length
+    	)+"<br>";
+		}
+		function one(arg1){
+			alert(
+        'zero.length', one.length,
+        'arguments', arguments.length
+    	);
+    	console.log(
+        'one.length', one.length,
+        'arguments', arguments.length
+    	);
+    	document.write(
+        'zero.length', one.length,
+        'arguments', arguments.length
+    	)+"<br>";
+		}
+		function two(arg1, arg2){
+			alert(
+        'zero.length', two.length,
+        'arguments', arguments.length
+    	);
+    	console.log(
+        'two.length', two.length,
+        'arguments', arguments.length
+    	);
+    	document.write(
+        'zero.length', two.length,
+        'arguments', arguments.length
+    	)+"<br>";
+		}
+		zero();
+		one('val1', 'val2');
+		two('val1');
 	</script>
 </body>
 </html>
